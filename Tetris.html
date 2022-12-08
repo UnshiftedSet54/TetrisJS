@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>TETRIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="neon">TETRIS</h1>
+    </header>
+
+    <div class="container">
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="info">
+            <div class="info_text">
+                <p class="p">&#11105 Rotate</p>
+                <p class="p">&#11107 Move down</p>
+                <p class="p">&#11104 Move left</p>
+                <p class="p">&#11106 Move right</p>
+            </div>
+            <div class="puntos">
+                <p>SCORE</p>
+                <span id="puntos"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="load-screen">
+        <img src="./resources/gifs/KHM7.gif" alt="start gif">
+        <p>(use spacebar)</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+h1 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+canvas, .info_text, .puntos {
+  border: 6px solid #e33314;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px #fa1c1663;
+}
+
+canvas{
+  margin-right: 1rem;
+}
+
+.info_text {
+  padding: 1rem;
+}
+
+.puntos{
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 6.8rem;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+  padding-bottom: 1.2rem;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.load-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img{
+  width: 90%;
+}
